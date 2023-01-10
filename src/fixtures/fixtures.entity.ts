@@ -1,17 +1,17 @@
-import {
-  BaseEntity,
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-  CreateDateColumn,
-  UpdateDateColumn,
-  JoinColumn,
-  ManyToOne,
-} from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsOptional } from 'class-validator';
+import {
+  BaseEntity,
+  Column,
+  CreateDateColumn,
+  Entity,
+  JoinColumn,
+  ManyToOne,
+  PrimaryGeneratedColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 import { Teams } from '../teams/teams.entity';
-import { Tournaments } from 'src/tournaments/tournaments.entity';
+import { Tournaments } from '../tournaments/tournaments.entity';
 
 @Entity()
 export class Fixtures extends BaseEntity {
